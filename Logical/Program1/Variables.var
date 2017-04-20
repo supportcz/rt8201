@@ -1,0 +1,6 @@
+VAR
+	sin_val : INT;
+	alpha_rad : REAL;
+	RTCycleCounter : UINT;
+	di1 : BOOL;
+END_VAR

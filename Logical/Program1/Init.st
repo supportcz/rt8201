@@ -1,0 +1,7 @@
+
+
+PROGRAM _INIT
+	RTCycleCounter;
+	
+	 
+END_PROGRAM
