@@ -1,8 +1,0 @@
-VAR
-	rtiAin_0 : rtiAin;
-	rtiRes_0 : rtiRes;
-	rtiComp_0 : rtiComp;
-	rtiRes_1 : rtiRes;
-	rtiAnLimit_0 : rtiAnLimit;
-	rtiDout_0 : rtiDout;
-END_VAR

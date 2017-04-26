@@ -1,0 +1,11 @@
+VAR
+	RTCycleCounter : UINT;
+END_VAR
+VAR RETAIN
+	time1 : REAL;
+	time2 : REAL;
+	period1 : INT;
+	period2 : INT;
+	percent1 : INT;
+	percent2 : INT;
+END_VAR

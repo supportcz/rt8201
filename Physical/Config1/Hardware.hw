@@ -9,32 +9,41 @@
     <Connection Connector="X2X1" TargetModule="X20BM31" TargetConnector="X2X2" />
   </Module>
   <Module Name="X20BM31" Type="X20BM31" Version="1.0.0.1">
-    <Connection Connector="X2X1" TargetModule="X20CP1381" TargetConnector="IF6" />
+    <Connection Connector="X2X1" TargetModule="X20CP1381_RT" TargetConnector="IF6" />
   </Module>
-  <Module Name="X20CP1381" Type="X20CP1381" Version="1.3.2.0">
+  <Module Name="X20CP1381_RT" Type="X20CP1381-RT" Version="1.3.0.0">
     <Module Name="X1" Type="X1" Virtual="true" Version="1.0.0.0">
       <Connection Connector="SS1" TargetModule="X20TB1F" TargetConnector="SS" />
-      <Connection Connector="SL" TargetModule="X20CP1381" TargetConnector="X1" />
+      <Connection Connector="SL" TargetModule="X20CP1381_RT" TargetConnector="X1" />
     </Module>
     <Module Name="X2" Type="X2" Virtual="true" Version="1.0.0.0">
       <Connection Connector="SS1" TargetModule="X20TB1F1" TargetConnector="SS" />
-      <Connection Connector="SL" TargetModule="X20CP1381" TargetConnector="X2" />
+      <Connection Connector="SL" TargetModule="X20CP1381_RT" TargetConnector="X2" />
     </Module>
     <Module Name="X3" Type="X3" Virtual="true" Version="1.0.0.0">
       <Connection Connector="SS1" TargetModule="X20TB1F2" TargetConnector="SS" />
-      <Connection Connector="SL" TargetModule="X20CP1381" TargetConnector="X3" />
+      <Connection Connector="SL" TargetModule="X20CP1381_RT" TargetConnector="X3" />
     </Module>
     <Connection Connector="X1" TargetModule="X1" TargetConnector="SL" />
     <Connection Connector="X2" TargetModule="X2" TargetConnector="SL" />
     <Connection Connector="X3" TargetModule="X3" TargetConnector="SL" />
     <Connector Name="IF2">
       <Parameter ID="ActivateDevice" Value="1" />
+      <Parameter ID="Mode" Value="Manual" />
+      <Parameter ID="InternetAddress" Value="192.168.0.10" />
+      <Parameter ID="SubnetMask" Value="255.255.255.0" />
+      <Group ID="Vnc1" />
+      <Parameter ID="VncVcObjectName1" Value="Visu" />
+      <Parameter ID="VncKeyMappingFile1" Value="VC\PS2-Keyboard.dis" />
+    </Connector>
+    <Connector Name="IF3">
+      <Parameter ID="ActivatePowerlink" Value="0" />
+      <Parameter ID="CycleTime" Value="2000" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="rt8201_Config1" />
-    <Parameter ID="Simulation" Value="1" />
     <Parameter ID="TimerDeviceType" Value="SWIOTIMER" />
-    <Parameter ID="Cyclic1Duration" Value="10000" />
-    <Parameter ID="Cyclic1Tolerance" Value="10000" />
+    <Parameter ID="Cyclic1Duration" Value="2000" />
+    <Parameter ID="Cyclic1Tolerance" Value="8000" />
     <Parameter ID="Cyclic2Duration" Value="20000" />
     <Parameter ID="Cyclic2Tolerance" Value="20000" />
     <Parameter ID="Cyclic3Duration" Value="50000" />
@@ -49,12 +58,14 @@
     <Parameter ID="Cyclic7Tolerance" Value="1000000" />
     <Parameter ID="Cyclic8Duration" Value="10000" />
     <Parameter ID="Cyclic8Tolerance" Value="30000000" />
+    <Parameter ID="ReActionTaskDisabled" Value="FALSE" />
+    <Parameter ID="SystemTick" Value="2000" />
   </Module>
   <Module Name="X20RT8201" Type="X20RT8201" Version="1.1.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />
     <Connection Connector="SS2" TargetModule="X20TB12a" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20BM31" TargetConnector="SL1" />
-    <Parameter ID="ReActionTask" Value="Program" />
+    <Parameter ID="ReActionTask" Value="phase_lock" />
     <Parameter ID="ReActionTaskDisabled" Value="FALSE" />
     <Parameter ID="ReActionCycleCounter" Value="on" />
     <Parameter ID="ReActionCycleTimeMin" Value="on" />

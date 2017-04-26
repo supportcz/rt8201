@@ -1,6 +1,6 @@
 VAR
 	sin_val : INT;
-	alpha_rad : REAL;
-	RTCycleCounter : UINT;
-	di1 : BOOL;
+	twoPi : REAL;
+	sinTable : ARRAY[0..19] OF INT;
+	cycle : INT;
 END_VAR

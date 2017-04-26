@@ -1,0 +1,4 @@
+VAR_CONFIG
+	::rt_driver:RTCycleCounter AT %IW."X20RT8201".RTCycleCounter;
+	::sin_genera:sin_val AT %QW."X20AO4622".AnalogOutput01;
+END_VAR
