@@ -9,3 +9,8 @@ VAR RETAIN
 	percent1 : INT;
 	percent2 : INT;
 END_VAR
+VAR
+	RTEnable : BOOL;
+	RES02 : DINT;
+	RES01 : DINT;
+END_VAR

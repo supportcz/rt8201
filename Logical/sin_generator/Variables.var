@@ -1,6 +1,6 @@
 VAR
-	sin_val : INT;
 	twoPi : REAL;
 	sinTable : ARRAY[0..19] OF INT;
 	cycle : INT;
+	sin_val : INT;
 END_VAR

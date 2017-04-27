@@ -1,9 +1,15 @@
 VAR
 	rtiAin_0 : rtiAin;
-	rtiRes_0 : rtiRes;
 	rtiComp_0 : rtiComp;
-	rtiRes_1 : rtiRes;
-	rtiAnLimit_0 : rtiAnLimit;
 	rtiDout_0 : rtiDout;
+	rtiDout_1 : rtiDout;
+	rtiNot_0 : rtiNot;
+	rtiSRff_0 : rtiSRff;
+	rtiVarWrite_0 : rtiVarWrite;
+	rtiVarRead_0 : rtiVarRead;
 	rtiComp_1 : rtiComp;
+	rtiVarWrite_1 : rtiVarWrite;
+	rtiTDel_0 : rtiTDel;
+	rtiRes_0 : rtiRes;
+	rtiRes_1 : rtiRes;
 END_VAR

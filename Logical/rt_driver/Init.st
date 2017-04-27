@@ -2,8 +2,12 @@
 
 PROGRAM _INIT
 	 
+	RTEnable := TRUE;
+	
 	//just variable declarations
 	RTCycleCounter;
+	RES01;
+	
 	time1;
 	time2;
 	period1;

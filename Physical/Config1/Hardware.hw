@@ -42,10 +42,12 @@
     </Connector>
     <Parameter ID="ConfigurationID" Value="rt8201_Config1" />
     <Parameter ID="TimerDeviceType" Value="SWIOTIMER" />
+    <Parameter ID="SystemTick" Value="2000" />
+    <Parameter ID="TaskClassIdleTime" Value="2000" />
     <Parameter ID="Cyclic1Duration" Value="2000" />
-    <Parameter ID="Cyclic1Tolerance" Value="8000" />
-    <Parameter ID="Cyclic2Duration" Value="20000" />
-    <Parameter ID="Cyclic2Tolerance" Value="20000" />
+    <Parameter ID="Cyclic1Tolerance" Value="200000" />
+    <Parameter ID="Cyclic2Duration" Value="10000" />
+    <Parameter ID="Cyclic2Tolerance" Value="200000" />
     <Parameter ID="Cyclic3Duration" Value="50000" />
     <Parameter ID="Cyclic3Tolerance" Value="50000" />
     <Parameter ID="Cyclic4Duration" Value="100000" />
@@ -59,7 +61,6 @@
     <Parameter ID="Cyclic8Duration" Value="10000" />
     <Parameter ID="Cyclic8Tolerance" Value="30000000" />
     <Parameter ID="ReActionTaskDisabled" Value="FALSE" />
-    <Parameter ID="SystemTick" Value="2000" />
   </Module>
   <Module Name="X20RT8201" Type="X20RT8201" Version="1.1.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />
@@ -70,7 +71,7 @@
     <Parameter ID="ReActionCycleCounter" Value="on" />
     <Parameter ID="ReActionCycleTimeMin" Value="on" />
     <Parameter ID="TypeRes1" Value="DINT" />
-    <Parameter ID="TypeRes2" Value="BOOL" />
+    <Parameter ID="TypeRes2" Value="DINT" />
   </Module>
   <Module Name="X20TB12" Type="X20TB12" Version="1.0.0.0" />
   <Module Name="X20TB12a" Type="X20TB12" Version="1.0.0.0" />

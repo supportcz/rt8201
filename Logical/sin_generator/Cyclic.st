@@ -19,4 +19,6 @@ PROGRAM _CYCLIC
 	
 	sin_val := sinTable[cycle];
 	
+	sin_val_dint := sin_val;
+	
 END_PROGRAM

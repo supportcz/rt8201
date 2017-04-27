@@ -1,4 +1,7 @@
 VAR_CONFIG
 	::rt_driver:RTCycleCounter AT %IW."X20RT8201".RTCycleCounter;
 	::sin_genera:sin_val AT %QW."X20AO4622".AnalogOutput01;
+	::rt_driver:RTEnable AT %QX."X20RT8201".RTEnable;
+	Cyclic#1.::rt_driver:RES01 AT %ID."X20RT8201".RES01;
+	::rt_driver:RES02 AT %ID."X20RT8201".RES02;
 END_VAR
