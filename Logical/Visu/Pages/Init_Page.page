@@ -209,7 +209,7 @@
           <Property Name="Height" Value="22"/>
           <Property Name="Left" Value="140"/>
           <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="99"/>
+          <Property Name="MaxValue" Value="100"/>
           <Property Name="MinDatapoint" Value="None"/>
           <Property Name="MinValue" Value="20"/>
           <Property Name="SimulationValue" Value="40"/>
@@ -243,7 +243,7 @@
           <Property Name="Height" Value="22"/>
           <Property Name="Left" Value="340"/>
           <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="99"/>
+          <Property Name="MaxValue" Value="100"/>
           <Property Name="MinDatapoint" Value="None"/>
           <Property Name="MinValue" Value="20"/>
           <Property Name="SimulationValue" Value="54"/>

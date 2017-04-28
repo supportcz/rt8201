@@ -14,7 +14,7 @@ CDataType0INT16
 CDataType0DINT18
 CDataType0UDINT22
 CDataType0BOOL15
-CTRrefblocktypes8
+CTRrefblocktypes10
 CFirmwareBlockType0
 
 CBlockType4NONONO10YES
@@ -71,6 +71,23 @@ CFirmwareBlockType0
 
 CBlockType4NONONO10YES
 
+CCfgEditObject1rtiVarWrite-1
+CTRinputtype2
+CClass2NOYES0NOINTNO
+
+CCfgEditObject1DpNr1
+CClass2NOYES1NODINTNO
+
+CCfgEditObject1In2
+CTRoutputtype1
+CClass2NONO0NODINTNO
+
+CCfgEditObject1Simul3
+CTRparamtype0
+CFirmwareBlockType0
+
+CBlockType4NONONO10YES
+
 CCfgEditObject1rtiSRff-1
 CTRinputtype2
 CClass2NOYES0NODINTNO
@@ -91,14 +108,14 @@ CFirmwareBlockType0
 
 CBlockType4NONONO10YES
 
-CCfgEditObject1rtiVarWrite-1
+CCfgEditObject1rtiRes-1
 CTRinputtype2
 CClass2NOYES0NOINTNO
 
 CCfgEditObject1DpNr1
 CClass2NOYES1NODINTNO
 
-CCfgEditObject1In2
+CCfgEditObject1Data2
 CTRoutputtype1
 CClass2NONO0NODINTNO
 
@@ -151,63 +168,68 @@ CFirmwareBlockType0
 
 CBlockType4NONONO10YES
 
-CCfgEditObject1rtiRes-1
+CCfgEditObject1rtiPar-1
 CTRinputtype2
 CClass2NOYES0NOINTNO
 
 CCfgEditObject1DpNr1
 CClass2NOYES1NODINTNO
 
-CCfgEditObject1Data2
+CCfgEditObject1Simul2
 CTRoutputtype1
 CClass2NONO0NODINTNO
 
-CCfgEditObject1Simul3
+CCfgEditObject1Data3
 CTRparamtype0
 CFirmwareBlockType0
 
 CBlockType4NONONO10YES
 
-CCfgEditObject1rtiTDel-1
-CTRinputtype8
+CCfgEditObject1rtiTP-1
+CTRinputtype2
 CClass2NOYES0NODINTNO
 
-CCfgEditObject1Enable1
+CCfgEditObject1IN1
 CClass2NOYES1NODINTNO
 
-CCfgEditObject1Comp12
-CClass2NOYES2NODINTNO
-
-CCfgEditObject1Comp23
-CClass2NOYES3NODINTNO
-
-CCfgEditObject1Comp34
-CClass2NOYES4NODINTNO
-
-CCfgEditObject1Comp45
-CClass2NOYES5NODINTNO
-
-CCfgEditObject1Comp56
-CClass2NOYES6NODINTNO
-
-CCfgEditObject1Comp67
-CClass2NOYES7NODINTNO
-
-CCfgEditObject1Base8
-CTRoutputtype1
+CCfgEditObject1PT2
+CTRoutputtype2
 CClass2NONO0NODINTNO
 
-CCfgEditObject1Out9
+CCfgEditObject1Q3
+CClass2NONO1NODINTNO
+
+CCfgEditObject1ET4
+CTRparamtype0
+CFirmwareBlockType0
+
+CBlockType4NONONO10YES
+
+CCfgEditObject1rtiRF_TRIG-1
+CTRinputtype1
+CClass2NOYES0NODINTNO
+
+CCfgEditObject1CLK1
+CTRoutputtype3
+CClass2NONO0NODINTNO
+
+CCfgEditObject1OutEdge2
+CClass2NONO1NODINTNO
+
+CCfgEditObject1OutEdgePos3
+CClass2NONO2NODINTNO
+
+CCfgEditObject1OutEdgeNeg4
 CTRparamtype0
 CPageFormat100NO6013
 CExtend_IEC_Info00
-CFBDDiagramChart02
+CFBDDiagramChart01
 
 CFunctionChart41NO
 
 CCfgEditObject1-1
-CPageFormat100NO6025
-CTRblocks2
+CPageFormat100NO6039
+CTRblocks3
 8
 CFBDNetworkBlockType1
 CPageFormat100NO6012
@@ -229,7 +251,7 @@ CFunctionChart42NO
 
 CCfgEditObject1-1
 CPageFormat100NO6012
-CTRblocks8
+CTRblocks9
 7
 CTextBlock0
 
@@ -319,8 +341,9 @@ CConnector4YESNO-1NO
 CCfgEditObject1StatusStatus5
 CValue1
 CValueItem118NO
-CTRconnections1
-CTempSimpleAddress01301
+CTRconnections2
+CTempSimpleAddress01351
+CTempSimpleAddress02301
 CTRinputs3
 1
 CConnector4YESNO-1NO
@@ -365,8 +388,9 @@ CConnector4YESNO-1NO
 CCfgEditObject1StatusStatus5
 CValue1
 CValueItem118NO
-CTRconnections1
-CTempSimpleAddress02301
+CTRconnections2
+CTempSimpleAddress02401
+CTempSimpleAddress02351
 CTRinputs3
 1
 CConnector4YESNO-1NO
@@ -391,85 +415,12 @@ CValue1
 CValueItem1-100018NO
 CTRconnections0
 CTRparams0
-0rtiSRffrtiSRff
-CFirmwareBlock0rtiSRff_0
-
-CBlock71223524NO
-
-CCfgEditObject1rtiSRff1rtiSRff30
-CTRoutputs2
-3
-CConnector4YESNO-1NO
-
-CCfgEditObject1OutTsEdgeOutTsEdge3
-CValue1
-CValueItem118NO
-CTRconnections1
-CTempSimpleAddress02351
-4
-CConnector4YESNO-1NO
-
-CCfgEditObject1OutOut4
-CValue1
-CValueItem118NO
-CTRconnections2
-CTempSimpleAddress03451
-CTempSimpleAddress02401
-CTRinputs2
-1
-CConnector4YESNO-1NO
-
-CCfgEditObject1InSInS1
-CValue1
-CValueItem118NO
-CTRconnections1
-CTempSimpleAddress05201
-2
-CConnector4YESNO-1NO
-
-CCfgEditObject1InRInR2
-CValue1
-CValueItem118NO
-CTRconnections1
-CTempSimpleAddress05251
-CTRparams0
-0rtiVarWritertiVarWrite
-CFirmwareBlock0rtiVarWrite_1
-
-CBlock71331425NO
-
-CCfgEditObject1rtiVarWrite1rtiVarWrite35
-CTRoutputs1
-3
-CConnector4YESNO-1NO
-
-CCfgEditObject1SimulSimul3
-CValue1
-CValueItem118NO
-CTRconnections0
-CTRinputs2
-1
-CConnector4YESNO-1NO
-
-CCfgEditObject1DpNrDpNr1
-CValue1
-CValueItem1216NO
-CTRconnections0
-2
-CConnector4YESNO-1NO
-
-CCfgEditObject1InIn2
-CValue1
-CValueItem118NO
-CTRconnections1
-CTempSimpleAddress03301
-CTRparams0
 0rtiVarWritertiVarWrite
 CFirmwareBlock0rtiVarWrite_0
 
-CBlock71334426NO
+CBlock71221424NO
 
-CCfgEditObject1rtiVarWrite1rtiVarWrite40
+CCfgEditObject1rtiVarWrite1rtiVarWrite30
 CTRoutputs1
 3
 CConnector4YESNO-1NO
@@ -493,14 +444,115 @@ CCfgEditObject1InIn2
 CValue1
 CValueItem118NO
 CTRconnections1
-CTempSimpleAddress04301
+CTempSimpleAddress05201
+CTRparams0
+0rtiSRffrtiSRff
+CFirmwareBlock0rtiSRff_0
+
+CBlock71224525NO
+
+CCfgEditObject1rtiSRff1rtiSRff35
+CTRoutputs2
+3
+CConnector4YESNO-1NO
+
+CCfgEditObject1OutTsEdgeOutTsEdge3
+CValue1
+CValueItem118NO
+CTRconnections0
+4
+CConnector4YESNO-1NO
+
+CCfgEditObject1OutOut4
+CValue1
+CValueItem118NO
+CTRconnections1
+CTempSimpleAddress03501
+CTRinputs2
+1
+CConnector4YESNO-1NO
+
+CCfgEditObject1InSInS1
+CValue1
+CValueItem118NO
+CTRconnections1
+CTempSimpleAddress05201
+2
+CConnector4YESNO-1NO
+
+CCfgEditObject1InRInR2
+CValue1
+CValueItem118NO
+CTRconnections1
+CTempSimpleAddress05251
+CTRparams0
+0rtiVarWritertiVarWrite
+CFirmwareBlock0rtiVarWrite_1
+
+CBlock71258426NO
+
+CCfgEditObject1rtiVarWrite1rtiVarWrite40
+CTRoutputs1
+3
+CConnector4YESNO-1NO
+
+CCfgEditObject1SimulSimul3
+CValue1
+CValueItem118NO
+CTRconnections0
+CTRinputs2
+1
+CConnector4YESNO-1NO
+
+CCfgEditObject1DpNrDpNr1
+CValue1
+CValueItem1216NO
+CTRconnections0
+2
+CConnector4YESNO-1NO
+
+CCfgEditObject1InIn2
+CValue1
+CValueItem118NO
+CTRconnections1
+CTempSimpleAddress05251
+CTRparams0
+0rtiResrtiRes
+CFirmwareBlock0rtiRes_0
+
+CBlock71321427NO
+
+CCfgEditObject1rtiRes1rtiRes45
+CTRoutputs1
+3
+CConnector4YESNO-1NO
+
+CCfgEditObject1SimulSimul3
+CValue1
+CValueItem118NO
+CTRconnections0
+CTRinputs2
+1
+CConnector4YESNO-1NO
+
+CCfgEditObject1DpNrDpNr1
+CValue1
+CValueItem1116NO
+CTRconnections0
+2
+CConnector4YESNO-1NO
+
+CCfgEditObject1DataData2
+CValue1
+CValueItem118NO
+CTRconnections0
 CTRparams0
 0rtiDoutrtiDout
 CFirmwareBlock0rtiDout_0
 
-CBlock71337447NO
+CBlock71324448NO
 
-CCfgEditObject1rtiDout1rtiDout45
+CCfgEditObject1rtiDout1rtiDout50
 CTRoutputs1
 6
 CConnector4YESNO-1NO
@@ -531,7 +583,7 @@ CCfgEditObject1InIn3
 CValue1
 CValueItem118NO
 CTRconnections1
-CTempSimpleAddress04301
+CTempSimpleAddress04351
 4
 CConnector4YESNO-1NO
 
@@ -578,7 +630,7 @@ CFunctionChart42NO
 
 CCfgEditObject1-1
 CPageFormat100NO6013
-CTRblocks6
+CTRblocks8
 7
 CTextBlock0
 
@@ -591,7 +643,7 @@ CTRparams0
 0rtiVarReadrtiVarRead
 CFirmwareBlock0rtiVarRead_0
 
-CBlock7126421NO
+CBlock7122421NO
 
 CCfgEditObject1rtiVarRead1rtiVarRead15
 CTRoutputs1
@@ -601,9 +653,110 @@ CConnector4YESNO-1NO
 CCfgEditObject1OutOut3
 CValue1
 CValueItem118NO
-CTRconnections2
-CTempSimpleAddress08252
-CTempSimpleAddress02202
+CTRconnections1
+CTempSimpleAddress01252
+CTRinputs2
+1
+CConnector4YESNO-1NO
+
+CCfgEditObject1DpNrDpNr1
+CValue1
+CValueItem1116NO
+CTRconnections0
+2
+CConnector4YESNO-1NO
+
+CCfgEditObject1SimulSimul2
+CValue1
+CValueItem118NO
+CTRconnections0
+CTRparams0
+0rtiParrtiPar
+CFirmwareBlock0rtiPar_0
+
+CBlock7125422NO
+
+CCfgEditObject1rtiPar1rtiPar20
+CTRoutputs1
+3
+CConnector4YESNO-1NO
+
+CCfgEditObject1DataData3
+CValue1
+CValueItem118NO
+CTRconnections1
+CTempSimpleAddress02252
+CTRinputs2
+1
+CConnector4YESNO-1NO
+
+CCfgEditObject1DpNrDpNr1
+CValue1
+CValueItem1116NO
+CTRconnections0
+2
+CConnector4YESNO-1NO
+
+CCfgEditObject1SimulSimul2
+CValue1
+CValueItem118NO
+CTRconnections0
+CTRparams0
+0rtiTPrtiTP
+CFirmwareBlock0rtiTP_0
+
+CBlock7192323NO
+
+CCfgEditObject1rtiTP1rtiTP25
+CTRoutputs2
+3
+CConnector4YESNO-1NO
+
+CCfgEditObject1QQ3
+CValue1
+CValueItem118NO
+CTRconnections1
+CTempSimpleAddress01352
+4
+CConnector4YESNO-1NO
+
+CCfgEditObject1ETET4
+CValue1
+CValueItem118NO
+CTRconnections0
+CTRinputs2
+1
+CConnector4YESNO-1NO
+
+CCfgEditObject1ININ1
+CValue1
+CValueItem118NO
+CTRconnections1
+CTempSimpleAddress03152
+2
+CConnector4YESNO-1NO
+
+CCfgEditObject1PTPT2
+CValue1
+CValueItem118NO
+CTRconnections1
+CTempSimpleAddress03202
+CTRparams0
+0rtiParrtiPar
+CFirmwareBlock0rtiPar_1
+
+CBlock72136424NO
+
+CCfgEditObject1rtiPar2rtiPar30
+CTRoutputs1
+3
+CConnector4YESNO-1NO
+
+CCfgEditObject1DataData3
+CValue1
+CValueItem118NO
+CTRconnections1
+CTempSimpleAddress02402
 CTRinputs2
 1
 CConnector4YESNO-1NO
@@ -620,123 +773,64 @@ CValue1
 CValueItem118NO
 CTRconnections0
 CTRparams0
-0rtiResrtiRes
-CFirmwareBlock0rtiRes_0
+0rtiRF_TRIGrtiRF_TRIG
+CFirmwareBlock0rtiRF_TRIG_0
 
-CBlock711210422NO
+CBlock71142435NO
 
-CCfgEditObject1rtiRes1rtiRes20
-CTRoutputs1
-3
-CConnector4YESNO-1NO
-
-CCfgEditObject1SimulSimul3
-CValue1
-CValueItem118NO
-CTRconnections0
-CTRinputs2
-1
-CConnector4YESNO-1NO
-
-CCfgEditObject1DpNrDpNr1
-CValue1
-CValueItem1116NO
-CTRconnections0
+CCfgEditObject1rtiRF_TRIG1rtiRF_TRIG35
+CTRoutputs3
 2
 CConnector4YESNO-1NO
 
-CCfgEditObject1DataData2
+CCfgEditObject1OutEdgeOutEdge2
 CValue1
 CValueItem118NO
-CTRconnections1
-CTempSimpleAddress03152
-CTRparams0
-0rtiTDelrtiTDel
-CFirmwareBlock0rtiTDel_0
-
-CBlock71163453NO
-
-CCfgEditObject1rtiTDel1rtiTDel25
-CTRoutputs1
-9
-CConnector4YESNO-1NO
-
-CCfgEditObject1OutOut9
-CValue1
-CValueItem118NO
-CTRconnections2
-CTempSimpleAddress02302
-CTempSimpleAddress03352
-CTRinputs8
-1
-CConnector4YESNO-1NO
-
-CCfgEditObject1EnableEnable1
-CValue1
-CValueItem116#318NO
-CTRconnections0
-2
-CConnector4YESNO-1NO
-
-CCfgEditObject1Comp1Comp12
-CValue1
-CValueItem18000018NO
 CTRconnections0
 3
 CConnector4YESNO-1NO
 
-CCfgEditObject1Comp2Comp23
+CCfgEditObject1OutEdgePosOutEdgePos3
 CValue1
-CValueItem19000018NO
+CValueItem118NO
 CTRconnections0
 4
 CConnector4YESNO-1NO
 
-CCfgEditObject1Comp3Comp34
-CValue1
-CValueItem118NO
-CTRconnections0
-5
-CConnector4YESNO-1NO
-
-CCfgEditObject1Comp4Comp45
-CValue1
-CValueItem118NO
-CTRconnections0
-6
-CConnector4YESNO-1NO
-
-CCfgEditObject1Comp5Comp56
-CValue1
-CValueItem118NO
-CTRconnections0
-7
-CConnector4YESNO-1NO
-
-CCfgEditObject1Comp6Comp67
-CValue1
-CValueItem118NO
-CTRconnections0
-8
-CConnector4YESNO-1NO
-
-CCfgEditObject1BaseBase8
+CCfgEditObject1OutEdgeNegOutEdgeNeg4
 CValue1
 CValueItem118NO
 CTRconnections1
-CTempSimpleAddress03152
+CTempSimpleAddress01402
+CTRinputs1
+1
+CConnector4YESNO-1NO
+
+CCfgEditObject1CLKCLK1
+CValue1
+CValueItem118NO
+CTRconnections1
+CTempSimpleAddress03252
 CTRparams0
-0rtiResrtiRes
-CFirmwareBlock0rtiRes_1
+0rtiTPrtiTP
+CFirmwareBlock0rtiTP_1
 
-CBlock72293424NO
+CBlock72213326NO
 
-CCfgEditObject1rtiRes2rtiRes30
-CTRoutputs1
+CCfgEditObject1rtiTP2rtiTP40
+CTRoutputs2
 3
 CConnector4YESNO-1NO
 
-CCfgEditObject1SimulSimul3
+CCfgEditObject1QQ3
+CValue1
+CValueItem118NO
+CTRconnections1
+CTempSimpleAddress03452
+4
+CConnector4YESNO-1NO
+
+CCfgEditObject1ETET4
 CValue1
 CValueItem118NO
 CTRconnections0
@@ -744,25 +838,26 @@ CTRinputs2
 1
 CConnector4YESNO-1NO
 
-CCfgEditObject1DpNrDpNr1
-CValue1
-CValueItem1216NO
-CTRconnections0
-2
-CConnector4YESNO-1NO
-
-CCfgEditObject1DataData2
+CCfgEditObject1ININ1
 CValue1
 CValueItem118NO
 CTRconnections1
-CTempSimpleAddress09252
+CTempSimpleAddress04352
+2
+CConnector4YESNO-1NO
+
+CCfgEditObject1PTPT2
+CValue1
+CValueItem118NO
+CTRconnections1
+CTempSimpleAddress03302
 CTRparams0
 0rtiDoutrtiDout
 CFirmwareBlock0rtiDout_1
 
-CBlock71296445NO
+CBlock71292447NO
 
-CCfgEditObject1rtiDout1rtiDout35
+CCfgEditObject1rtiDout1rtiDout45
 CTRoutputs1
 6
 CConnector4YESNO-1NO
@@ -793,7 +888,312 @@ CCfgEditObject1InIn3
 CValue1
 CValueItem118NO
 CTRconnections1
-CTempSimpleAddress09252
+CTempSimpleAddress03402
+4
+CConnector4YESNO-1NO
+
+CCfgEditObject1ForceOnForceOn4
+CValue1
+CValueItem118NO
+CTRconnections0
+5
+CConnector4YESNO-1NO
+
+CCfgEditObject1ForceValForceVal5
+CValue1
+CValueItem118NO
+CTRconnections0
+CTRparams0
+CTRmargblocks1
+501
+CMarginBlock0
+
+CBlock700011NO
+
+CCfgEditObject11
+CTRoutputs0
+CTRinputs0
+CTRparams0
+8
+CFBDNetworkBlockType1
+CPageFormat100NO6014
+CFBDNetworkBlock1NO
+
+CFreeCompoundBlock1NO
+
+CUserBlock0
+
+COrganisationBlock0
+
+CBlock710211NO
+
+CCfgEditObject13
+CTRoutputs0
+CTRinputs0
+CTRparams0
+CFunctionChart42NO
+
+CCfgEditObject1-1
+CPageFormat100NO6014
+CTRblocks8
+7
+CTextBlock0
+
+CBlock710082NO
+
+CCfgEditObject1generate negative pulse110
+CTRoutputs0
+CTRinputs0
+CTRparams0
+0rtiVarReadrtiVarRead
+CFirmwareBlock0rtiVarRead_1
+
+CBlock7122421NO
+
+CCfgEditObject1rtiVarRead1rtiVarRead15
+CTRoutputs1
+3
+CConnector4YESNO-1NO
+
+CCfgEditObject1OutOut3
+CValue1
+CValueItem118NO
+CTRconnections1
+CTempSimpleAddress01253
+CTRinputs2
+1
+CConnector4YESNO-1NO
+
+CCfgEditObject1DpNrDpNr1
+CValue1
+CValueItem1216NO
+CTRconnections0
+2
+CConnector4YESNO-1NO
+
+CCfgEditObject1SimulSimul2
+CValue1
+CValueItem118NO
+CTRconnections0
+CTRparams0
+0rtiParrtiPar
+CFirmwareBlock0rtiPar_2
+
+CBlock7125422NO
+
+CCfgEditObject1rtiPar1rtiPar20
+CTRoutputs1
+3
+CConnector4YESNO-1NO
+
+CCfgEditObject1DataData3
+CValue1
+CValueItem118NO
+CTRconnections1
+CTempSimpleAddress02253
+CTRinputs2
+1
+CConnector4YESNO-1NO
+
+CCfgEditObject1DpNrDpNr1
+CValue1
+CValueItem1116NO
+CTRconnections0
+2
+CConnector4YESNO-1NO
+
+CCfgEditObject1SimulSimul2
+CValue1
+CValueItem118NO
+CTRconnections0
+CTRparams0
+0rtiTPrtiTP
+CFirmwareBlock0rtiTP_2
+
+CBlock7192323NO
+
+CCfgEditObject1rtiTP1rtiTP25
+CTRoutputs2
+3
+CConnector4YESNO-1NO
+
+CCfgEditObject1QQ3
+CValue1
+CValueItem118NO
+CTRconnections1
+CTempSimpleAddress01353
+4
+CConnector4YESNO-1NO
+
+CCfgEditObject1ETET4
+CValue1
+CValueItem118NO
+CTRconnections0
+CTRinputs2
+1
+CConnector4YESNO-1NO
+
+CCfgEditObject1ININ1
+CValue1
+CValueItem118NO
+CTRconnections1
+CTempSimpleAddress03153
+2
+CConnector4YESNO-1NO
+
+CCfgEditObject1PTPT2
+CValue1
+CValueItem118NO
+CTRconnections1
+CTempSimpleAddress03203
+CTRparams0
+0rtiParrtiPar
+CFirmwareBlock0rtiPar_3
+
+CBlock72136424NO
+
+CCfgEditObject1rtiPar2rtiPar30
+CTRoutputs1
+3
+CConnector4YESNO-1NO
+
+CCfgEditObject1DataData3
+CValue1
+CValueItem118NO
+CTRconnections1
+CTempSimpleAddress02403
+CTRinputs2
+1
+CConnector4YESNO-1NO
+
+CCfgEditObject1DpNrDpNr1
+CValue1
+CValueItem1216NO
+CTRconnections0
+2
+CConnector4YESNO-1NO
+
+CCfgEditObject1SimulSimul2
+CValue1
+CValueItem118NO
+CTRconnections0
+CTRparams0
+0rtiRF_TRIGrtiRF_TRIG
+CFirmwareBlock0rtiRF_TRIG_1
+
+CBlock71142435NO
+
+CCfgEditObject1rtiRF_TRIG1rtiRF_TRIG35
+CTRoutputs3
+2
+CConnector4YESNO-1NO
+
+CCfgEditObject1OutEdgeOutEdge2
+CValue1
+CValueItem118NO
+CTRconnections0
+3
+CConnector4YESNO-1NO
+
+CCfgEditObject1OutEdgePosOutEdgePos3
+CValue1
+CValueItem118NO
+CTRconnections0
+4
+CConnector4YESNO-1NO
+
+CCfgEditObject1OutEdgeNegOutEdgeNeg4
+CValue1
+CValueItem118NO
+CTRconnections1
+CTempSimpleAddress01403
+CTRinputs1
+1
+CConnector4YESNO-1NO
+
+CCfgEditObject1CLKCLK1
+CValue1
+CValueItem118NO
+CTRconnections1
+CTempSimpleAddress03253
+CTRparams0
+0rtiTPrtiTP
+CFirmwareBlock0rtiTP_3
+
+CBlock72213327NO
+
+CCfgEditObject1rtiTP2rtiTP40
+CTRoutputs2
+3
+CConnector4YESNO-1NO
+
+CCfgEditObject1QQ3
+CValue1
+CValueItem118NO
+CTRconnections1
+CTempSimpleAddress03453
+4
+CConnector4YESNO-1NO
+
+CCfgEditObject1ETET4
+CValue1
+CValueItem118NO
+CTRconnections0
+CTRinputs2
+1
+CConnector4YESNO-1NO
+
+CCfgEditObject1ININ1
+CValue1
+CValueItem118NO
+CTRconnections1
+CTempSimpleAddress04353
+2
+CConnector4YESNO-1NO
+
+CCfgEditObject1PTPT2
+CValue1
+CValueItem118NO
+CTRconnections1
+CTempSimpleAddress03303
+CTRparams0
+0rtiDoutrtiDout
+CFirmwareBlock0rtiDout_2
+
+CBlock71292448NO
+
+CCfgEditObject1rtiDout1rtiDout45
+CTRoutputs1
+6
+CConnector4YESNO-1NO
+
+CCfgEditObject1SimulSimul6
+CValue1
+CValueItem115NO
+CTRconnections0
+CTRinputs5
+1
+CConnector4YESNO-1NO
+
+CCfgEditObject1ChannelChannel1
+CValue1
+CValueItem1816NO
+CTRconnections0
+2
+CConnector4YESNO-1NO
+
+CCfgEditObject1EnableEnable2
+CValue1
+CValueItem1118NO
+CTRconnections0
+3
+CConnector4YESNO-1NO
+
+CCfgEditObject1InIn3
+CValue1
+CValueItem118NO
+CTRconnections1
+CTempSimpleAddress03403
 4
 CConnector4YESNO-1NO
 
@@ -849,24 +1249,28 @@ LD -1000
 ST rtiComp_1.In2
 CAL rtiComp_1
 {ExecutionOrder := 4}
+LD 1
+ST rtiVarWrite_0.DpNr
+LD rtiComp_0.Status
+ST rtiVarWrite_0.In
+CAL rtiVarWrite_0
+{ExecutionOrder := 5}
 LD rtiComp_0.Status
 ST rtiSRff_0.InS
 LD rtiComp_1.Status
 ST rtiSRff_0.InR
 CAL rtiSRff_0
-{ExecutionOrder := 5}
+{ExecutionOrder := 6}
 LD 2
 ST rtiVarWrite_1.DpNr
-LD rtiSRff_0.OutTsEdge
+LD rtiComp_1.Status
 ST rtiVarWrite_1.In
 CAL rtiVarWrite_1
-{ExecutionOrder := 6}
-LD 1
-ST rtiVarWrite_0.DpNr
-LD rtiSRff_0.Out
-ST rtiVarWrite_0.In
-CAL rtiVarWrite_0
 {ExecutionOrder := 7}
+LD 1
+ST rtiRes_0.DpNr
+CAL rtiRes_0
+{ExecutionOrder := 8}
 LD 3
 ST rtiDout_0.Channel
 LD 1
@@ -877,39 +1281,79 @@ CAL rtiDout_0
 
 {NetworkNumber := 2}
 {ExecutionOrder := 1}
-LD 2
+LD 1
 ST rtiVarRead_0.DpNr
 CAL rtiVarRead_0
 {ExecutionOrder := 2}
 LD 1
-ST rtiRes_0.DpNr
-LD rtiVarRead_0.Out
-ST rtiRes_0.Data
-CAL rtiRes_0
+ST rtiPar_0.DpNr
+CAL rtiPar_0
 {ExecutionOrder := 3}
-LD 16#3
-ST rtiTDel_0.Enable
-LD 80000
-ST rtiTDel_0.Comp1
-LD 90000
-ST rtiTDel_0.Comp2
 LD rtiVarRead_0.Out
-ST rtiTDel_0.Base
-CAL rtiTDel_0
+ST rtiTP_0.IN
+LD rtiPar_0.Data
+ST rtiTP_0.PT
+CAL rtiTP_0
 {ExecutionOrder := 4}
 LD 2
-ST rtiRes_1.DpNr
-LD rtiTDel_0.Out
-ST rtiRes_1.Data
-CAL rtiRes_1
+ST rtiPar_1.DpNr
+CAL rtiPar_1
 {ExecutionOrder := 5}
+LD rtiTP_0.Q
+ST rtiRF_TRIG_0.CLK
+CAL rtiRF_TRIG_0
+{ExecutionOrder := 6}
+LD rtiRF_TRIG_0.OutEdgeNeg
+ST rtiTP_1.IN
+LD rtiPar_1.Data
+ST rtiTP_1.PT
+CAL rtiTP_1
+{ExecutionOrder := 7}
 LD 7
 ST rtiDout_1.Channel
 LD 1
 ST rtiDout_1.Enable
-LD rtiTDel_0.Out
+LD rtiTP_1.Q
 ST rtiDout_1.In
 CAL rtiDout_1
+
+{NetworkNumber := 3}
+{ExecutionOrder := 1}
+LD 2
+ST rtiVarRead_1.DpNr
+CAL rtiVarRead_1
+{ExecutionOrder := 2}
+LD 1
+ST rtiPar_2.DpNr
+CAL rtiPar_2
+{ExecutionOrder := 3}
+LD rtiVarRead_1.Out
+ST rtiTP_2.IN
+LD rtiPar_2.Data
+ST rtiTP_2.PT
+CAL rtiTP_2
+{ExecutionOrder := 4}
+LD 2
+ST rtiPar_3.DpNr
+CAL rtiPar_3
+{ExecutionOrder := 5}
+LD rtiTP_2.Q
+ST rtiRF_TRIG_1.CLK
+CAL rtiRF_TRIG_1
+{ExecutionOrder := 6}
+LD rtiRF_TRIG_1.OutEdgeNeg
+ST rtiTP_3.IN
+LD rtiPar_3.Data
+ST rtiTP_3.PT
+CAL rtiTP_3
+{ExecutionOrder := 7}
+LD 8
+ST rtiDout_2.Channel
+LD 1
+ST rtiDout_2.Enable
+LD rtiTP_3.Q
+ST rtiDout_2.In
+CAL rtiDout_2
 
 
 END_PROGRAM
@@ -920,15 +1364,25 @@ END_PROGRAM
 rtiAin_0 : rtiAin;
 rtiComp_0 : rtiComp;
 rtiComp_1 : rtiComp;
+rtiVarWrite_0 : rtiVarWrite;
 rtiSRff_0 : rtiSRff;
 rtiVarWrite_1 : rtiVarWrite;
-rtiVarWrite_0 : rtiVarWrite;
+rtiRes_0 : rtiRes;
 rtiDout_0 : rtiDout;
 rtiVarRead_0 : rtiVarRead;
-rtiRes_0 : rtiRes;
-rtiTDel_0 : rtiTDel;
-rtiRes_1 : rtiRes;
+rtiPar_0 : rtiPar;
+rtiTP_0 : rtiTP;
+rtiPar_1 : rtiPar;
+rtiRF_TRIG_0 : rtiRF_TRIG;
+rtiTP_1 : rtiTP;
 rtiDout_1 : rtiDout;
+rtiVarRead_1 : rtiVarRead;
+rtiPar_2 : rtiPar;
+rtiTP_2 : rtiTP;
+rtiPar_3 : rtiPar;
+rtiRF_TRIG_1 : rtiRF_TRIG;
+rtiTP_3 : rtiTP;
+rtiDout_2 : rtiDout;
 <END_DATATYPES>
 
 
@@ -942,38 +1396,60 @@ REFERENCE->rtiComp_0.In1
 1000->rtiComp_0.In2
 EXE->rtiComp_0
 rtiComp_0.Status->rtiSRff_0.InS
+REFERENCE->rtiVarWrite_0.In
 16#80000009->rtiComp_1.Mode
 -1000->rtiComp_1.In2
 EXE->rtiComp_1
-rtiComp_1.Status->rtiSRff_0.InR
-EXE->rtiSRff_0
-rtiSRff_0.OutTsEdge->rtiVarWrite_1.In
-rtiSRff_0.Out->rtiDout_0.In
-REFERENCE->rtiVarWrite_0.In
-2->rtiVarWrite_1.DpNr
-EXE->rtiVarWrite_1
+rtiComp_1.Status->rtiVarWrite_1.In
+REFERENCE->rtiSRff_0.InR
 1->rtiVarWrite_0.DpNr
 EXE->rtiVarWrite_0
+EXE->rtiSRff_0
+rtiSRff_0.Out->rtiDout_0.In
+2->rtiVarWrite_1.DpNr
+EXE->rtiVarWrite_1
+1->rtiRes_0.DpNr
+EXE->rtiRes_0
 3->rtiDout_0.Channel
 1->rtiDout_0.Enable
 EXE->rtiDout_0
 
-2->rtiVarRead_0.DpNr
+1->rtiVarRead_0.DpNr
 EXE->rtiVarRead_0
-rtiVarRead_0.Out->rtiTDel_0.Base
-REFERENCE->rtiRes_0.Data
-1->rtiRes_0.DpNr
-EXE->rtiRes_0
-16#3->rtiTDel_0.Enable
-80000->rtiTDel_0.Comp1
-90000->rtiTDel_0.Comp2
-EXE->rtiTDel_0
-rtiTDel_0.Out->rtiRes_1.Data
-REFERENCE->rtiDout_1.In
-2->rtiRes_1.DpNr
-EXE->rtiRes_1
+rtiVarRead_0.Out->rtiTP_0.IN
+1->rtiPar_0.DpNr
+EXE->rtiPar_0
+rtiPar_0.Data->rtiTP_0.PT
+EXE->rtiTP_0
+rtiTP_0.Q->rtiRF_TRIG_0.CLK
+2->rtiPar_1.DpNr
+EXE->rtiPar_1
+rtiPar_1.Data->rtiTP_1.PT
+EXE->rtiRF_TRIG_0
+rtiRF_TRIG_0.OutEdgeNeg->rtiTP_1.IN
+EXE->rtiTP_1
+rtiTP_1.Q->rtiDout_1.In
 7->rtiDout_1.Channel
 1->rtiDout_1.Enable
 EXE->rtiDout_1
+
+2->rtiVarRead_1.DpNr
+EXE->rtiVarRead_1
+rtiVarRead_1.Out->rtiTP_2.IN
+1->rtiPar_2.DpNr
+EXE->rtiPar_2
+rtiPar_2.Data->rtiTP_2.PT
+EXE->rtiTP_2
+rtiTP_2.Q->rtiRF_TRIG_1.CLK
+2->rtiPar_3.DpNr
+EXE->rtiPar_3
+rtiPar_3.Data->rtiTP_3.PT
+EXE->rtiRF_TRIG_1
+rtiRF_TRIG_1.OutEdgeNeg->rtiTP_3.IN
+EXE->rtiTP_3
+rtiTP_3.Q->rtiDout_2.In
+8->rtiDout_2.Channel
+1->rtiDout_2.Enable
+EXE->rtiDout_2
 <END_CONNECTIONS>
 (* REACTION_INFORMATION_0EE94921-86E2-4CF9-B2B9-F7C7BF0AEFC0_END *)

@@ -11,6 +11,10 @@ VAR RETAIN
 END_VAR
 VAR
 	RTEnable : BOOL;
-	RES02 : DINT;
 	RES01 : DINT;
+	RES02 : DINT;
+	percent : REAL; (*opening angle of thyristor [%]*)
+	PAR01 : DINT;
+	PAR02 : DINT;
+	pulseLength : REAL; (*pulse length [ms]*)
 END_VAR

@@ -1,15 +1,29 @@
 VAR
 	rtiAin_0 : rtiAin;
 	rtiComp_0 : rtiComp;
+	rtiComp_1 : rtiComp;
+	rtiDoutTime_0 : rtiDoutTime;
 	rtiDout_0 : rtiDout;
 	rtiDout_1 : rtiDout;
 	rtiNot_0 : rtiNot;
-	rtiSRff_0 : rtiSRff;
-	rtiVarWrite_0 : rtiVarWrite;
-	rtiVarRead_0 : rtiVarRead;
-	rtiComp_1 : rtiComp;
-	rtiVarWrite_1 : rtiVarWrite;
-	rtiTDel_0 : rtiTDel;
+	rtiPar_0 : rtiPar;
+	rtiPar_1 : rtiPar;
 	rtiRes_0 : rtiRes;
 	rtiRes_1 : rtiRes;
+	rtiRF_TRIG_0 : rtiRF_TRIG;
+	rtiSRff_0 : rtiSRff;
+	rtiTDel_0 : rtiTDel;
+	rtiTP_0 : rtiTP;
+	rtiTP_1 : rtiTP;
+	rtiVarRead_0 : rtiVarRead;
+	rtiVarWrite_0 : rtiVarWrite;
+	rtiVarWrite_1 : rtiVarWrite;
+	rtiDout_2 : rtiDout;
+	rtiVarRead_1 : rtiVarRead;
+	rtiRF_TRIG_1 : rtiRF_TRIG;
+	rtiPar_2 : rtiPar;
+	rtiTP_2 : rtiTP;
+	rtiPar_3 : rtiPar;
+	rtiTP_3 : rtiTP;
+	rtiRes_2 : rtiRes;
 END_VAR
