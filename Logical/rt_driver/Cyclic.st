@@ -7,6 +7,7 @@ PROGRAM _INIT
 	RTCycleCounter;
 	RES01;
 	RES02;
+	RES03;
 	
 	time1 := 2;
 	time2 := 1;

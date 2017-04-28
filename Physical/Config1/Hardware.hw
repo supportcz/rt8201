@@ -44,7 +44,7 @@
     <Parameter ID="TimerDeviceType" Value="SWIOTIMER" />
     <Parameter ID="SystemTick" Value="2000" />
     <Parameter ID="Cyclic1Duration" Value="2000" />
-    <Parameter ID="Cyclic1Tolerance" Value="1000000" />
+    <Parameter ID="Cyclic1Tolerance" Value="10000000" />
     <Parameter ID="Cyclic2Duration" Value="20000" />
     <Parameter ID="Cyclic2Tolerance" Value="20000" />
     <Parameter ID="Cyclic3Duration" Value="50000" />
@@ -71,8 +71,10 @@
     <Parameter ID="ReActionCycleTimeMin" Value="on" />
     <Parameter ID="TypePar1" Value="DINT" />
     <Parameter ID="TypePar2" Value="DINT" />
+    <Parameter ID="TypePar3" Value="DINT" />
     <Parameter ID="TypeRes1" Value="DINT" />
     <Parameter ID="TypeRes2" Value="DINT" />
+    <Parameter ID="TypeRes3" Value="DINT" />
   </Module>
   <Module Name="X20TB12" Type="X20TB12" Version="1.0.0.0" />
   <Module Name="X20TB12a" Type="X20TB12" Version="1.0.0.0" />

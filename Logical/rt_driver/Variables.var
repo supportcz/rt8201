@@ -17,4 +17,5 @@ VAR
 	PAR01 : DINT;
 	PAR02 : DINT;
 	pulseLength : REAL; (*pulse length [ms]*)
+	RES03 : DINT;
 END_VAR
