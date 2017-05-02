@@ -18,4 +18,12 @@ VAR
 	PAR02 : DINT;
 	pulseLength : REAL; (*pulse length [ms]*)
 	RES03 : DINT;
+	rectangle : BOOL;
+	halfWaveCounter : DINT;
+	oldHalfWaveCounter : DINT;
+	step : INT;
+	RTInfo_0 : RTInfo;
+	usCounter : UDINT;
+	period : INT;
+	cmdStart : BOOL;
 END_VAR

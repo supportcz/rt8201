@@ -64,6 +64,8 @@
     <LibraryObject Name="ashw" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="vcresman" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="astime" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
-    <LibraryObject Name="runtime" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="standard" Source="Libraries.standard.lby" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="brsystem" Source="Libraries.brsystem.lby" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="runtime" Source="Libraries.runtime.lby" Memory="UserROM" Language="Binary" Debugging="true" />
   </Libraries>
 </SwConfiguration>

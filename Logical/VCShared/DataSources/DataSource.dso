@@ -70,6 +70,15 @@
         <Property Name="UserID" Value="None"/>
         <Property Name="VCType" Value="SCALED"/>
       </DataPoint>
+      <DataPoint Name="cmdStart">
+        <Property Name="ConnectedBySharedResource" Value="False"/>
+        <Property Name="ConnectingVisus" Value="Visu"/>
+        <Property Name="Description" Value=""/>
+        <Property Name="PLCType" Value="BOOL"/>
+        <Property Name="UpdateTime" Value="Default"/>
+        <Property Name="UserID" Value="None"/>
+        <Property Name="VCType" Value="BOOL"/>
+      </DataPoint>
     </Folder>
   </DataPoints>
 </DataSource>
