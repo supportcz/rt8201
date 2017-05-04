@@ -3,4 +3,6 @@ VAR
 	sinTable : ARRAY[0..19] OF INT;
 	cycle : INT;
 	sin_val : INT;
+	RTInfo_0 : RTInfo;
+	samples : INT;
 END_VAR

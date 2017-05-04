@@ -211,7 +211,7 @@
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="100"/>
           <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="20"/>
+          <Property Name="MinValue" Value="1"/>
           <Property Name="SimulationValue" Value="40"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
           <Property Name="TeachDatapoint" Value="None"/>
@@ -245,7 +245,7 @@
           <Property Name="MaxDatapoint" Value="None"/>
           <Property Name="MaxValue" Value="100"/>
           <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="20"/>
+          <Property Name="MinValue" Value="1"/>
           <Property Name="SimulationValue" Value="54"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Input]"/>
           <Property Name="TeachDatapoint" Value="None"/>

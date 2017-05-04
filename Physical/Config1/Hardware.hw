@@ -30,7 +30,7 @@
     <Connector Name="IF2">
       <Parameter ID="ActivateDevice" Value="1" />
       <Parameter ID="Mode" Value="Manual" />
-      <Parameter ID="InternetAddress" Value="192.168.0.10" />
+      <Parameter ID="InternetAddress" Value="192.168.20.10" />
       <Parameter ID="SubnetMask" Value="255.255.255.0" />
       <Group ID="Vnc1" />
       <Parameter ID="VncVcObjectName1" Value="Visu" />
@@ -75,6 +75,9 @@
     <Parameter ID="TypeRes1" Value="DINT" />
     <Parameter ID="TypeRes2" Value="DINT" />
     <Parameter ID="TypeRes3" Value="DINT" />
+    <Parameter ID="TypeRes4" Value="DINT" />
+    <Parameter ID="TypeRes5" Value="DINT" />
+    <Parameter ID="TypeRes6" Value="DINT" />
   </Module>
   <Module Name="X20TB12" Type="X20TB12" Version="1.0.0.0" />
   <Module Name="X20TB12a" Type="X20TB12" Version="1.0.0.0" />

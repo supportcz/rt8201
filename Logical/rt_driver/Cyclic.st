@@ -8,6 +8,9 @@ PROGRAM _INIT
 	RES01;
 	RES02;
 	RES03;
+	RES04;
+	RES05;
+	RES06;
 	
 	time1 := 2;
 	time2 := 1;
@@ -38,11 +41,11 @@ PROGRAM _CYCLIC
 				step := step + 1;
 			END_IF
 		1:
-			percent := 0;
+//			percent := 0;
 
 			//wait time1
 			usCounter := usCounter + RTInfo_0.cycle_time;
-			IF usCounter > REAL_TO_UDINT(time1 * 10000000) THEN
+			IF usCounter > REAL_TO_UDINT(time1 * 1000000) THEN
 				period := 0;
 				step := step + 1;
 			END_IF
@@ -52,30 +55,30 @@ PROGRAM _CYCLIC
 			IF halfWaveCounter <> oldHalfWaveCounter AND rectangle = TRUE THEN
 				percent := percent1 + period * (percent2 - percent1)/period1;
 				period := period + 1;
-				IF period = period1 THEN
-					period := 0;
+				IF period > period1 THEN
 					step := step + 1;
 				END_IF
 			END_IF
 		
 		3:
-			percent := percent2;
-
 			//hold power
+			//percent := percent2;
+
 			IF halfWaveCounter <> oldHalfWaveCounter AND rectangle = TRUE THEN
 				period := period + 1;
-				IF period = period2 THEN
+				IF period > period1 + period2 THEN
+					percent := 0;
 					usCounter := 0;
 					step := step + 1;
 				END_IF
 			END_IF
 			
 		4:
-			percent := 0;
+//			percent := 0;
 			
 			//wait time2
 			usCounter := usCounter + RTInfo_0.cycle_time;
-			IF usCounter > REAL_TO_UDINT(time2 * 10000000) THEN
+			IF usCounter > REAL_TO_UDINT(time2 * 1000000) THEN
 				step := 0;
 			END_IF
 		

@@ -26,4 +26,7 @@ VAR
 	usCounter : UDINT;
 	period : INT;
 	cmdStart : BOOL;
+	RES04 : DINT;
+	RES05 : DINT;
+	RES06 : DINT;
 END_VAR
