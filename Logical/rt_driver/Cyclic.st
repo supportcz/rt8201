@@ -1,7 +1,7 @@
 PROGRAM _INIT
 	 
 	RTEnable := TRUE;
-	pulseLength := 0.5; 
+	pulseLength := 0.2; 
 	
 	//just variable declarations
 	RTCycleCounter;
@@ -25,11 +25,8 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	
-	//get rectangle
-	rectangle := DINT_TO_BOOL(RES02);
-	
 	//pulse counter
-	halfWaveCounter := RES03;
+	periodCounter := RES02;
 	
 	CASE step OF
 		0:
@@ -41,8 +38,6 @@ PROGRAM _CYCLIC
 				step := step + 1;
 			END_IF
 		1:
-//			percent := 0;
-
 			//wait time1
 			usCounter := usCounter + RTInfo_0.cycle_time;
 			IF usCounter > REAL_TO_UDINT(time1 * 1000000) THEN
@@ -52,7 +47,7 @@ PROGRAM _CYCLIC
 	
 		2:
 			//increase power
-			IF halfWaveCounter <> oldHalfWaveCounter AND rectangle = TRUE THEN
+			IF periodCounter <> oldPeriodCounter THEN
 				percent := percent1 + period * (percent2 - percent1)/period1;
 				period := period + 1;
 				IF period > period1 THEN
@@ -62,9 +57,7 @@ PROGRAM _CYCLIC
 		
 		3:
 			//hold power
-			//percent := percent2;
-
-			IF halfWaveCounter <> oldHalfWaveCounter AND rectangle = TRUE THEN
+			IF periodCounter <> oldPeriodCounter THEN
 				period := period + 1;
 				IF period > period1 + period2 THEN
 					percent := 0;
@@ -74,8 +67,6 @@ PROGRAM _CYCLIC
 			END_IF
 			
 		4:
-//			percent := 0;
-			
 			//wait time2
 			usCounter := usCounter + RTInfo_0.cycle_time;
 			IF usCounter > REAL_TO_UDINT(time2 * 1000000) THEN
@@ -84,17 +75,17 @@ PROGRAM _CYCLIC
 		
 	END_CASE
 	
-	oldHalfWaveCounter := halfWaveCounter;
+	oldPeriodCounter := periodCounter;
 	
 	//send opening angle to thyristor
-	PAR01 := REAL_TO_DINT(1000 - 10 * percent);
+	PAR01 := REAL_TO_DINT(1000000 - 10000 * percent) + 1;
 	IF PAR01 < 1 THEN
 		PAR01 := 1;
 	END_IF
 	
 	//send pulse length to thyristor
-	PAR02 := REAL_TO_DINT(100 * pulseLength); 
-	IF PAR02 < 0 OR PAR01 = 1000 THEN
+	PAR02 := REAL_TO_DINT(1000000 * pulseLength); 
+	IF PAR02 < 0 OR PAR01 > 1000000 THEN
 		PAR02 := 0;
 	END_IF
 	

@@ -5,7 +5,6 @@ VAR
 	rtiDoutTime_0 : rtiDoutTime;
 	rtiDout_0 : rtiDout;
 	rtiDout_1 : rtiDout;
-	rtiNot_0 : rtiNot;
 	rtiPar_0 : rtiPar;
 	rtiPar_1 : rtiPar;
 	rtiRes_0 : rtiRes; (*analog sinus value*)
@@ -13,12 +12,7 @@ VAR
 	rtiRes_2 : rtiRes; (*sinus counter*)
 	rtiRes_3 : rtiRes;
 	rtiRF_TRIG_0 : rtiRF_TRIG;
-	rtiRF_TRIG_1 : rtiRF_TRIG;
 	rtiSRff_0 : rtiSRff;
-	rtiTP_0 : rtiTP;
-	rtiTP_1 : rtiTP;
-	rtiTP_2 : rtiTP;
-	rtiTP_3 : rtiTP;
 	rtiVarRead_0 : rtiVarRead;
 	rtiVarRead_1 : rtiVarRead;
 	rtiVarWrite_0 : rtiVarWrite;
@@ -26,19 +20,22 @@ VAR
 	rtiRegister_0 : rtiRegister;
 	rtiVarRead_2 : rtiVarRead;
 	rtiVarWrite_2 : rtiVarWrite;
-	rtiVarRead_3 : rtiVarRead;
 	rtiVarRead_4 : rtiVarRead;
 	rtiVarRead_5 : rtiVarRead;
 	rtiVarRead_6 : rtiVarRead;
 	rtiRes_4 : rtiRes;
 	rtiRes_5 : rtiRes;
-	rtiAnd_0 : rtiAnd;
-	rtiLatch_0 : rtiLatch;
-	rtiComp_2 : rtiComp;
-	rtiLatch_1 : rtiLatch;
-	rtiComp_3 : rtiComp;
 	rtiVarWrite_3 : rtiVarWrite;
 	rtiVarRead_7 : rtiVarRead;
 	rtiVarRead_8 : rtiVarRead;
-	rtiDout_2 : rtiDout;
+	rtiDoutTime_1 : rtiDoutTime;
+	rtiAdd_0 : rtiAdd;
+	rtiCount_0 : rtiCount;
+	rtiVarWrite_4 : rtiVarWrite;
+	rtiVarWrite_5 : rtiVarWrite;
+	rtiVarRead_9 : rtiVarRead;
+	rtiAdd_1 : rtiAdd;
+	rtiMux_0 : rtiMux;
+	rtiVarRead_10 : rtiVarRead;
+	rtiComp_2 : rtiComp;
 END_VAR

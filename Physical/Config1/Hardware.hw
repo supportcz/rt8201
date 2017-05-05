@@ -43,7 +43,7 @@
     <Parameter ID="ConfigurationID" Value="rt8201_Config1" />
     <Parameter ID="TimerDeviceType" Value="SWIOTIMER" />
     <Parameter ID="SystemTick" Value="2000" />
-    <Parameter ID="Cyclic1Duration" Value="2000" />
+    <Parameter ID="Cyclic1Duration" Value="10000" />
     <Parameter ID="Cyclic1Tolerance" Value="10000000" />
     <Parameter ID="Cyclic2Duration" Value="20000" />
     <Parameter ID="Cyclic2Tolerance" Value="20000" />
