@@ -5,28 +5,28 @@ PROGRAM _INIT
 	
 	//just variable declarations
 	RTCycleCounter;
-	RES01;
+	RES01;//odpovedi z RT karty do PLC
 	RES02;
 	RES03;
 	RES04;
 	RES05;
 	RES06;
 	
-	time1 := 2;
-	time2 := 1;
-	period1 := 3;
-	period2 := 7;
-	percent1 := 40;
-	percent2 := 54;
+	time1 := 2;//cas pred svarovanim
+	time2 := 1;//cas po svarovani
+	period1 := 3;//kolik period se vzrustajicim vykonem
+	period2 := 7;//kolik period s konstantnim vykonem
+	percent1 := 40;//pocatecni vykon
+	percent2 := 54;//konecny vykon
 	
-	RTInfo_0(enable := TRUE);
+	RTInfo_0(enable := TRUE);//pro zjisteni task class
 	
 END_PROGRAM
 
 PROGRAM _CYCLIC
 	
 	//pulse counter
-	periodCounter := RES02;
+	periodCounter := RES02;//citac period
 	
 	CASE step OF
 		0:
@@ -78,7 +78,7 @@ PROGRAM _CYCLIC
 	oldPeriodCounter := periodCounter;
 	
 	//send opening angle to thyristor
-	PAR01 := REAL_TO_DINT(1000000 - 10000 * percent) + 1;
+	PAR01 := REAL_TO_DINT(1000000 - 10000 * percent) + 1; //1 se pøièíta aby fungoval rtiDoutTime
 	IF PAR01 < 1 THEN
 		PAR01 := 1;
 	END_IF

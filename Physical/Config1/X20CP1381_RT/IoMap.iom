@@ -9,4 +9,5 @@ VAR_CONFIG
 	::rt_driver:RES04 AT %ID."X20RT8201".RES04;
 	::rt_driver:RES05 AT %ID."X20RT8201".RES05;
 	::rt_driver:RES06 AT %ID."X20RT8201".RES06;
+	::rt_driver:RTCycleCounter AT %IW."X20RT8201".RTCycleCounter;
 END_VAR

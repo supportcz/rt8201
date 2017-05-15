@@ -11,6 +11,10 @@ PROGRAM _INIT
 		sinTable[cycle] := REAL_TO_INT(32000 * SIN(cycle*twoPi/samples));
 	END_FOR	
 	
+	IF samples = 2 THEN
+		sinTable[1] := 30000;
+	END_IF
+	
 END_PROGRAM
 
 PROGRAM _CYCLIC
